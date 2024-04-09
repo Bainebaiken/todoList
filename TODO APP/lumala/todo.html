@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List of lumala</title>
+    <link rel="stylesheet" href="./todo.css"> <!---linking my css file-->
+</head>
+<body>
+    
+
+       <!-- adding a logo  -->     
+    <div class="container"> <!--this element serves as a container for all the elements related to the to-do list.-->
+        <img src="./images/blue-white-a-removebg-preview.png" alt="Logo" class="logo" height="20%", width="20%">
+        
+        <h1>To-Do List</h1> <!--this is my title for my list-->
+        
+
+        <input type="text" id="taskInput" placeholder="Enter a task"> <!--creating an input field (<input>) of type "text" for users to input text to add new tasks to the to-do list-->
+
+        <input type="date" id="dueDate"> <!-- this helps Users to input a date to specify the due date for a task. It has an id attribute set to "dueDate" for JavaScript interaction.-->
+
+        <button onclick="addTask()">Add Task</button> <!--When clicked, it triggers the addTask() function, which is expected to add a new task to the to-do list.-->
+
+        <ul id="taskList"></ul> <!---unordered list element (<ul>), which serves as a container for the list of tasks in the to-do list. -->
+    </div>
+    
+<!--linking my javascript file -->
+    <script src="./todo.js"></script>
+</body>
+</html>
